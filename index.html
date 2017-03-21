@@ -18,9 +18,10 @@
         <li><a href="#">Content</a></li>
         <li><a href="#">Listings</a></li>
         <li><a href="#">Settings</a></li>
+        <li><a href="#">Integrations</a></li>
         <li><a href="#">Client Upgrades</a></li>
-        <li><a href="#">FAQ's</a></li>
         <li><a href="#tips">Tips/Tricks</a></li>
+        <li><a href="#">FAQ's</a></li>
       </ul>
       <section class="content">
 
@@ -35,7 +36,7 @@
           </h2>
           <div>The primary menu can be used to navigate through core sections of the CRM.</div>
           <figure>
-            <img src="img/mainMenuLg.png" alt="" style="display: block; margin-bottom: 12px;" />
+            <!-- <img src="img/mainMenuLg.png" alt="" style="display: block; margin-bottom: 12px;" /> -->
             <img src="img/mainMenu.png" alt="" />
             <figcaption>CORE SECTIONS OF REW CRM</figcaption>
           </figure>
@@ -61,6 +62,34 @@
             </a>
             CRM
           </h2>
+
+          <h4 class="subtitle">Tools</h4>
+          <p>Developer tasks such as importing leads, social network login access and search engine keywords can be found under the tools section.</p>
+          <figure>
+            <img src="img/crmTools.png" alt="" />
+            <figcaption>CORE SECTIONS OF REW CRM</figcaption>
+          </figure>
+
+          <h4>Importing Leads</h4>
+          <p>Upload the <code>.CSV</code> file you want to import.</p>
+          <p>You can opt in to generae saved searches if required.</p>
+          <p>Update the status of the leads as required.</p>
+          <p>Assign the list of imported leads to an agent and/or group if applicable.</p>
+          <p>Click the "Import Leads" button.</p>
+          <figure>
+            <img src="img/leadsImport.png" alt="" />
+            <figcaption>The import leads page in REW CRM</figcaption>
+          </figure>
+
+          <h4>Exporting Leads</h4>
+          <p>Select the specific agent whose leads you want to export.</p>
+          <p>Add the data that you need to export for the leads to the list.</p>
+          <p>Update the <code>.CSV</code> file name if required.</p>
+          <p>Click the "Download" button to get a copy of the CSV file.</p>
+          <figure>
+            <img src="img/leadsExport.png" alt="" />
+            <figcaption>The export leads page in REW CRM</figcaption>
+          </figure>
         </div>
 
         <div>
@@ -92,27 +121,23 @@
           </figure>
 
           <figure>
-            <img src="img/addButton.png" alt="" />
+            <img src="img/add.png" alt="" />
             <figcaption>The + icon on the right can also be used to add new content</figcaption>
           </figure>
 
           <p>To add or update content click the "Save" button that is located at the bottom right of the edit pages.</p>
           <figure>
-            <img src="img/saveButton.png" alt="" />
+            <img src="img/save.png" alt="" />
             <figcaption>The location of the "Save" button is consistent with the CRM</figcaption>
           </figure>
 
           <h4 class="subtitle">Section Sorting</h4>
           <div class="todo">TODO: Move to broader category?</div>
           <p>Click on the title of the current section to sort the content being displayed.</p>
-          <video controls>
-            <!-- <source src="vid/pageSort.mp4" type="video/mp4"> -->
-            <source src="vid/pageSort.webm" type="video/webm">
+          <video autoplay loop muted playsinline>
+            <source src="vid/sort.mp4" type="video/mp4">
+            <source src="vid/sort.webm" type="video/webm">
           </video>
-          <!-- <figure>
-            <img src="img/pageSort.png" alt="" />
-            <figcaption>A context menu used to sort the through the available pages</figcaption>
-          </figure> -->
 
           <h4 class="subtitle">Snippets</h4>
           <p>All available snippets are present on the page and the list can be sorted using the context menu.</p>
@@ -144,6 +169,26 @@
           </h2>
         </div>
 
+        <h4 class="subtitle">Adding a Custom IDX Search</h4>
+        <p>Navigate to the add search page.</p>
+        <p>Create a title for the new custom search.</p>
+        <p>Add the required search panels and update configurations if needed.</p>
+        <p>Click the "Save" button, the new custom search should appear on the "IDX Searches" list.</p>
+        <video autoplay loop muted playsinline>
+          <source src="vid/idx.mp4" type="video/mp4">
+          <source src="vid/idx.webm" type="video/webm">
+        </video>
+
+        <h4 class="subtitle">Adding a Featured Listing</h4>
+        <p>Search for a listing using the Address or MLS #.</p>
+        <p>Select the appropriate listing.</p>
+        <p>Click the "Save" button.</p>
+
+        <figure>
+          <img src="img/featuredListing.png" alt="" />
+          <figcaption>Newly added listings appear on the "Featured Listings" list</figcaption>
+        </figure>
+
         <div>
           <h2 class="title">
             <a href="#settings" class="anchor">
@@ -153,6 +198,61 @@
             </a>
             Settings
           </h2>
+        </div>
+
+        <div>
+          <h2 class="title">
+            <a href="#integrations" class="anchor">
+              <svg height="16" viewBox="0 0 16 16" width="16">
+                <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+              </svg>
+            </a>
+            <span id="integrations">Integrations</span>
+          </h2>
+            <div class="todo">TODO: List contact names for each integration.</div>
+            <ul class="list">
+              <li class="list-item">BombBomb
+                <div class="status" title="Current Status">Active</div>
+              </li>
+              <li class="list-item">Dotloop
+                <div class="status" title="Current Status">TBD</div>
+              </li>
+              <li class="list-item">Follow Up Boss
+                <div class="status" title="Current Status">Active</div>
+              </li>
+              <li class="list-item">Google Business
+                <div class="status" title="Current Status">TBD</div>
+              </li>
+              <li class="list-item">Happy Grasshopper
+                <div class="status" title="Current Status">Active</div>
+              </li>
+              <li class="list-item">Mojo Dialer
+                <div class="status" title="Current Status">Dev</div>
+              </li>
+              <li class="list-item">Planomatics
+                <div class="status" title="Current Status">TBD</div>
+              </li>
+              <li class="list-item">REWText
+                <div class="status" title="Current Status">Active</div>
+                <ul class="sublist">
+                  <li class="list-item">The control panel used to setup new accounts: <a href="http://twilio.rewhosting.com/"></a> (see <a href="https://github.com/Real-Estate-Webmasters/rew-twilio/blob/master/docs/README.md">README.md</a> for details)</li>
+                  <li class="list-item">The code behind the control panel: <a href="https://github.com/Real-Estate-Webmasters/rew-twilio">https://github.com/Real-Estate-Webmasters/rew-twilio</a></li>
+                  <li class="list-item"><a href="https://github.com/Real-Estate-Webmasters/rew-twilio/blob/master/docs/INSTALL.md">Installation Guide</a></li>
+                </ul>
+              </li>
+              <li class="list-item">REW Dialer
+                <div class="status" title="Current Status">Active</div>
+                <ul class="sublist">
+                  <li class="list-item"><a href="http://xerxes/wiki/REW_Dialer#tutorial">Tutorial</a> <div class="todo">TODO: Ensure wiki is up to date</div></li>
+                </ul>
+              </li>
+              <li class="list-item">WiseAgent
+                <div class="status" title="Current Status">Active</div>
+              </li>
+              <li class="list-item">Zillow
+                <div class="status" title="Current Status">Dev</div>
+              </li>
+            </ul>
         </div>
 
         <div>
@@ -187,8 +287,23 @@
                   <li class="list-item">The <code>upgrade.php</code> tool is used for this: <a href="https://git.rewhosting.com/rew/_upgrade">https://git.rewhosting.com/rew/_upgrade</a></li>
                 </ul>
               </li>
+              <li class="list-item">
+                Tutorial for <code>upgrade.php</code> tool: <a href="http://xerxes/wiki/REW_Upgrade_Tools">http://xerxes/wiki/REW_Upgrade_Tools</a>
+                <div class="todo">TODO: Upgrade wiki with current information</div>
+              </li>
             </ul>
           </div>
+        </div>
+
+        <div>
+          <h2 class="title">
+            <a href="#tips" class="anchor">
+              <svg height="16" viewBox="0 0 16 16" width="16">
+                <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+              </svg>
+            </a>
+            <span id="tips">Tips/Tricks</span>
+          </h2>
         </div>
 
         <div>
@@ -204,7 +319,21 @@
           <h4 class="subtitle">Leads</h4>
           <div>Q. How to recover a deleted lead?</div>
           <div>A. ...</div>
-
+          <div>Q. How would you set up text messages for 4.8? do you have to contact support to add your number so that you can send out text messages?</div>
+          <div>A. Yes, you need to configure each beta site to work with the "REW Twilio" API. The tool to do this is here: <a href="http://twilio.rewhosting.com/">http://twilio.rewhosting.com/</a></div><br/>
+          <div>
+            <h4>Instructions:</h4>
+            <ul class="list">
+              <li class="list-item">1. Obtain REW API key by logging into the REW backend and navigate to: Leads > Tools > API Settings</li>
+              <li class="list-item">2. Go here and "Add New Account" using API key from previous step 1: <a href="http://twilio.rewhosting.com/">http://twilio.rewhosting.com/</a></li>
+              <li class="list-item">
+                3. Update the <code>modules.yml</code> to use the REW Twilio API key from step 2: <code>REW_PARTNERS_TWILIO: abc123xyz</code>
+                <ul class="sublist">
+                  <li class="list-item"><a href="https://git.rewhosting.com/enterprise/deploy/blob/dev/config/environments/4.8-bcse/modules.yml#L43">https://git.rewhosting.com/enterprise/deploy/blob/dev/config/environments/4.8-bcse/modules.yml#L43</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
           <h4 class="subtitle">Teams</h4>
           <div>Q. Should there be a rule on how many leads a member should take a day?</div>
           <div>A. ...</div>
@@ -212,18 +341,6 @@
           <div>Q. What if a team member decides to take all or most of the leads?</div>
           <div>A. ...</div>
         </div>
-
-        <div>
-          <h2 class="title">
-            <a href="#tips" class="anchor">
-              <svg height="16" viewBox="0 0 16 16" width="16">
-                <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
-              </svg>
-            </a>
-            <span id="tips">Tips/Tricks</span>
-          </h2>
-        </div>
-
       </section>
     </main>
   </body>
