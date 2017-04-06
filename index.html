@@ -312,6 +312,59 @@
               </li>
             </ul>
           </div>
+
+          <h2 class="title">Upgrade Process (April 5 2017)</h2>
+          <ol style="list-style: decimal; margin-bottom: 12px;">
+            <li>
+              <h2 class="subtitle">App path</h2>
+              <code>cd ~/app</code>
+            </li>
+            <li>
+              <h2 class="subtitle">Checkout Latest Code</h2>
+              <div><code>git remote add 4.8 https://git.rewhosting.com/rew/4.8.git</code></div>
+              <div><code>git fetch 4.8 4.8</code></div>
+              <div><code>git merge 4.8/4.8</code></div>
+            </li>
+            <li>
+              <h2 class="subtitle">Install Dependencies and Build Assets</h2>
+              <div><code>composer install && npm install</code></div>
+              <div><code>npm run build-backend</code></div>
+              <div><code>#npm run build-elite</code></div>
+            </li>
+            <li>
+              <h2 class="subtitle">Configure Environment</h2>
+              <div><code>console config:env <skin> [<scheme>] --idx-feed=<feed> -d<db> -u<user> -p<pass></code></div>
+            </li>
+            <li>
+              <h2 class="subtitle">Copy Site Uploads</h2>
+              <div><code>console server:rsync <user>@<host>:app/httpdocs/uploads/ ~/app/httpdocs/uploads/</code></div>
+            </li>
+            <li>
+              <h2 class="subtitle">Export Existing Site's Database</h2>
+              <div><code>console db:export --hostname=<host> -d <db> -u <user> -p<pass></code></div>
+            </li>
+            <li>
+              <h2 class="subtitle">Import to Local Database</h2>
+              <div><code>console db:import <filename></code></div>
+            </li>
+            <li>
+              <h2 class="subtitle">Patch Database to Latest</h2>
+              <div><code>console db:patch <commit></code></div>
+              <div><code>php ~/app/tools/phinx.php migrate</code></div>
+            </li>
+            <li>
+              <h2 class="subtitle">Merge Client Code</h2>
+              <div><code>rm ~/app/vendor -rf</code></div>
+              <div><code>git remote add old ssh://<user>@<host>:/var/www/vhosts/dev.<domain>/app/.git</code></div>
+              <div><code>git pull --no-commit --no-ff old master</code></div>
+              <div><code>git reset -- ~/app/vendor</code></div>
+              <div><code>composer install</code></div>
+            </li>
+            <li>
+              <h2 class="subtitle">Fix GIT Conflicts</h2>
+              <div><code>git merge --continue</code></div>
+            </li>
+          </ol>
         </div>
 
         <div>
@@ -323,6 +376,12 @@
             </a>
             <span id="tips">Tips/Tricks</span>
           </h2>
+
+          <h4 class="subtitle">Google Analytics Credentials</h4>
+          <div style="margin-bottom: 12px;">
+            <p>Login: rew.rpd@gmail.com</p>
+            <p>Password: rew.rpdee</p>
+          </div>
         </div>
 
         <div>
